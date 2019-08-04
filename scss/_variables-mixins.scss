@@ -47,9 +47,9 @@ $main-grey-color: rgb(168, 168, 168);
             color: $text2-color;
             position: absolute;
             transition: .8s;
-            top: 75%;
-            right: 25%;
-            width: 70%;
+            top: 50%;
+            right: 50%;
+            width: 100%;
         }
     }
     &:hover>.background {
