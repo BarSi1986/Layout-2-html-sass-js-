@@ -1,0 +1,172 @@
+@import url(//db.onlinewebfonts.com/c/a746852ffc294d00169321ff93d78641?family=AeonisLTW01-Regular);
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "AeonisLTW01-Regular";
+    letter-spacing: 3px;
+}
+
+:root{
+    --main-dark-color: #2a2a2a;
+    --main-yellow-color: #ffda00;
+    --main-light-color: rgb(216, 216, 216);
+}
+
+.topLine{
+    background-color: var(--main-dark-color);
+    width: 100vw;
+    height: 10vh;
+    color: var(--main-light-color);
+    text-align: center;
+    line-height: 10vh;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/* header animations */
+@keyframes logoNavHeaderAppear{
+    0%{opacity: 0;
+        height: 18%;}
+    60%{opacity: 0;
+        height: 18%;}
+    100%{opacity: 1;}
+}
+
+@keyframes logoNavHeaderAppear2{
+    0%{opacity: 0;
+        top: 45%;}
+    60%{opacity: 0;
+        top: 47%;}
+    90%{top: 50%;}
+    100%{opacity: 1;}
+}
+
+@keyframes yellowHeroEnter{
+    0%{width: 0%;}
+    40%{width: 0%;}
+    100%{width: 60%;}
+}
+@keyframes videoHeroEnter{
+    0%{
+        width: 0%;
+        height: 30%;
+        border: none;
+    }
+    40%{
+        width: 0%;
+        height: 30%;
+        border: none;
+    }
+    100%{
+        width: 50%;
+        border: 55px solid var(--main-dark-color);
+    }
+}
+
+
+/* end of header animations */
+
+header{
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    color: var(--main-dark-color);
+    font-weight: 600;
+    overflow-x: hidden;
+}
+.logo{
+    position: absolute;
+    width: 40vw;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: logoNavHeaderAppear 1.5s both;
+}
+.logo a{
+    font-family: 'Saira Stencil One', cursive;
+    text-decoration: none;
+    color: var(--main-dark-color);
+    font-size: 2em;
+}
+nav{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: logoNavHeaderAppear 3s both;
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 5%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--main-dark-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.yellowHero{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    right: 0;
+    background-color: var(--main-yellow-color);
+
+    animation: yellowHeroEnter 2s cubic-bezier(.58,.03,.31,.98) both;
+}
+.yellowHeroTxt{
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+    font-size: 2em;
+
+    animation: logoNavHeaderAppear2 4s both;
+}
+.yellowHeroTxt p:nth-of-type(1){
+    font-size: 109%;
+    margin-bottom: 10px;
+    animation: logoNavHeaderAppear2 4.2s both;
+}
+.yellowHeroTxt p:nth-of-type(2){
+    font-size: 67%;
+    margin-top: 15px;
+    animation: logoNavHeaderAppear2 5s both;
+}
+
+.videoWrap{
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    animation: videoHeroEnter 2.5s cubic-bezier(.58,.03,.31,.98) both;
+}
+
+video{
+   min-width: 100%;
+   min-height: 102%; 
+   position: absolute;
+   bottom: -1%;
+}

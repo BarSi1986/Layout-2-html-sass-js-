@@ -1,0 +1,252 @@
+@import './variables-mixins';
+
+/* header animations */
+
+
+
+.topLine{
+    background: $main-dark-color;
+    width: 100%;
+    height: 10vh;
+    color: $main-light-color;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    color: $main-dark-color;
+    font-weight: 600;
+    overflow-x: hidden;
+}
+.logo{
+    position: absolute;
+    width: 40vw;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    animation: logoNavHeaderAppear 1.5s both;
+    a{
+        
+        text-decoration: none;
+        color: $main-dark-color;
+        font-size: 2em;
+        span{
+            font-family: 'Saira Stencil One', cursive;
+        }
+
+    }
+}
+nav{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    animation: logoNavHeaderAppear 3s both;
+
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            list-style: none;
+            margin: 5%;
+
+            a{
+                text-decoration: none;
+                color: $main-dark-color;
+                cursor: pointer;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+.yellowHero{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    right: 0;
+    background-color: $main-yellow-color;
+    transition: .3s;
+    transition-delay: .2s;
+
+    animation: yellowHeroEnter 2s cubic-bezier(.58,.03,.31,.98);
+
+    .yellowHeroTxt{
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-25%, -50%);
+        font-size: 2em;
+    
+        animation: logoNavHeaderAppear2 4s;
+    
+        p:nth-of-type(1){
+            font-size: 113%;
+            margin-bottom: 10px;
+            animation: logoNavHeaderAppear2 4.2s both;
+        }
+        p:nth-of-type(2){
+            font-size: 67%;
+            span:nth-of-type(1){
+                position: absolute;
+                bottom: -30%;
+                left: 0;
+                animation: logoNavHeaderAppear3 5s both;
+            } 
+            span:nth-of-type(2){
+                position: absolute;
+                bottom: -60%;
+                left: 10%;
+                animation: logoNavHeaderAppear3 5.8s both;
+            } 
+            span:nth-of-type(3){
+                position: absolute;
+                bottom: -90%;
+                left: 23%;
+                animation: logoNavHeaderAppear3 6.4s both;
+            } 
+            span:nth-of-type(4){
+                position: absolute;
+                bottom: -120%;
+                left: 30%;
+                animation: logoNavHeaderAppear3 7.2s both;
+            } 
+        }
+    }
+}
+
+.yellowHero.readMore{
+    animation: ReadMoreEnter 1.5s both;
+    background: $main-dark-color;
+}
+.yellowHero.back{
+    animation: back 1s;
+}
+.logo a.lightLogo{
+    transition: .5s;
+    color: $main-light-color;
+}
+
+
+.videoWrap{
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    transition-delay: .5s;
+    animation: videoHeroEnter 2.5s cubic-bezier(.58,.03,.31,.98);
+
+    border: 55px solid $main-dark-color;
+    
+    video{
+        min-width: 100%;
+        min-height: 102%; 
+        position: absolute;
+        bottom: -1%;
+     }
+}
+
+// appear only on click nav
+
+#readMore{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition: 1s;
+    i{
+        color: white;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        font-size: 2.5em;
+        cursor: pointer;
+        z-index: 15;
+        animation: float 3s infinite;
+    }
+    .bgImg{
+        width: 100%;
+        height: 90%;
+        position: absolute;
+        background-image: url('/img/el-cap-2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.4
+    }
+    .article1{
+        color: white;
+        position: absolute;
+        width: 60%;
+        height: 50%;
+        top: 45%;
+        left: 30%;
+        h2{
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+    }
+}
+
+#readMore.active{
+    transition-delay: 1s;
+    opacity: 1;
+    z-index: 2;
+}
+
+/* hamburger menu */
+
+.burger{
+    position: absolute;
+    width: 35px;
+    z-index: 31;
+    top: 3%;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+.burger div{
+    border: 2px solid;
+    width: 90%;
+    margin: 5px;
+    border-radius: 200px;
+}
+
+.burger.clicked{
+    color: $main-light-color;
+    position: fixed;
+    top: 12.9%;
+}
+.active{
+    transform: translateX(0%);
+    z-index: 10;  
+}
+
+.burger.opacity{
+    display: none;
+}
+
+

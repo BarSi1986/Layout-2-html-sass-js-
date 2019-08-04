@@ -1,0 +1,18 @@
+@import url(//db.onlinewebfonts.com/c/a746852ffc294d00169321ff93d78641?family=AeonisLTW01-Regular);
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "AeonisLTW01-Regular";
+    letter-spacing: 3px;
+}
+
+
+
+@import './variables-mixins';
+@import './header';
+@import './sectionOne';
+@import './animations';
+@import './media-queries';

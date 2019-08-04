@@ -1,0 +1,104 @@
+@import './variables-mixins';
+
+
+@keyframes logoNavHeaderAppear{
+    0%{opacity: 0;
+        height: 18%;}
+    60%{opacity: 0;
+        height: 18%;}
+    100%{opacity: 1;}
+}
+
+@keyframes logoNavHeaderAppear2{
+    0%{opacity: 0;
+        top: 45%;}
+    60%{opacity: 0;
+        top: 47%;}
+    90%{top: 50%;}
+    100%{opacity: 1;}
+}
+@keyframes logoNavHeaderAppear3{
+    0%{opacity: 0;
+      }
+    60%{opacity: 0;
+        }
+    90%{}
+    100%{opacity: 1;}
+}
+
+@keyframes yellowHeroEnter{
+    0%{width: 0%;}
+    40%{width: 0%;}
+    100%{width: 60%;}
+}
+
+@keyframes ReadMoreEnter{
+    0%{width: 60%;}
+    100%{width: 100%;}
+}
+
+@keyframes back{
+    0%{width: 100%;}
+    100%{width: 60%;}
+}
+
+@keyframes videoHeroEnter{
+    0%{
+        width: 0%;
+        height: 30%;
+        border: none;
+    }
+    40%{
+        width: 0%;
+        height: 30%;
+        border: none;
+    }
+    100%{
+        width: 50%;
+        border: 55px solid $main-dark-color;
+    }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+// media queries animations
+
+@media (max-width: 1000px){
+    @keyframes yellowHeroEnter{
+        0%{width: 0%;}
+        40%{width: 0%;}
+        100%{width: 85%;}
+    }
+
+
+@keyframes videoHeroEnter{
+    0%{
+        width: 0%;
+        border: none;
+    }
+    40%{
+        width: 0%;
+        border: none;
+    }
+    100%{
+        width: 100%;
+        border: none;
+    }
+}
+
+@keyframes back{
+    100%{width: 85%;}
+    100%{width: 85%;}
+}
+
+
+}

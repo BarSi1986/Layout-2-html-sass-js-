@@ -1,0 +1,104 @@
+@import './variables-mixins';
+
+@media (min-width: 1000px){
+
+.break {
+    height: 15vh;
+    background: white;
+}
+
+#one {
+    .wrap {
+        display: flex;
+        flex-direction: column;
+
+        .firstOfOne{
+            height: 40vh;
+            display: flex;
+
+            .firstOfOne-child1{
+                display: flex;
+                flex-direction: column;
+                flex-basis: 50%;
+                padding: 5%;
+                h2{
+                    font-size: 2.8em;
+                    margin-bottom: 5%;
+                }
+                p{
+                    font-size: 1.3em;
+                }
+            }
+
+            .firstOfOne-child2{
+                position: relative;
+                overflow: hidden;
+                flex-basis: 50%;
+                cursor: pointer;
+
+                @include hoverImg($main-dark-color, 0.4, $main-light-color, $main-light-color, -50%, url('/img/glass-giants-2.jpg'));
+            }
+        }
+    
+        .secondOfOne{
+            display: flex;
+            height: 40vh;
+            div:nth-of-type(1){
+                flex-basis: 25%;
+                flex-grow: 1;
+                position: relative;
+                cursor: pointer;
+
+                @include hoverImg($main-grey-color, 1, $main-dark-color, $main-light-color, 0, url('/img/eiffel-tower.jpg'));
+            }
+            div:nth-of-type(2){
+                flex-grow: 2;
+                    position: relative;
+                    overflow: hidden;
+                    flex-basis: 50%;
+                    cursor: pointer;
+
+                    @include hoverImg($main-dark-color, 1, $main-light-color, $main-dark-color, -50%, url('/img/future-shapes.jpg'));
+            }
+            div:nth-of-type(3){
+                flex-grow: 1;
+                flex-basis: 25%;
+                position: relative;
+                cursor: pointer;
+
+                @include hoverImg($main-yellow-color, 1, $main-dark-color, $main-dark-color, 0, url('/img/minimal.jpg'));
+            }
+        }
+
+        .thirdOfOne{
+            height: 40vh;
+            display: flex;
+            .thirdOfOne-child1{
+                position: relative;
+                overflow: hidden;
+                flex-basis: 50%;
+                cursor: pointer;
+
+                @include hoverImg($main-yellow-color, 1, $main-dark-color, $main-light-color, -50%, url('/img/unreal-shapes.jpg'));
+            }
+
+            .thirdOfOne-child2{
+                background: $main-dark-color;
+                color: $main-light-color;
+                display: flex;
+                flex-direction: column;
+                flex-basis: 50%;
+                padding: 5%;
+                h2{
+                    font-size: 2.8em;
+                    margin-bottom: 5%;
+                }
+                p{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}
+
+}
