@@ -240,7 +240,7 @@ nav ul li a {
   width: 100%;
   height: 90%;
   position: absolute;
-  background-image: url("img/el-cap-2.jpg");
+  background-image: url("/img/el-cap-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
