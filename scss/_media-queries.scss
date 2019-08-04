@@ -267,11 +267,18 @@
     #one .wrap .secondOfOne div:nth-of-type(1) .innerWrapper .text2,
     #one .wrap .firstOfOne .firstOfOne-child2 .innerWrapper .text2,
     #one .wrap .secondOfOne div:nth-of-type(2) .innerWrapper .text2,
-    #one .wrap .secondOfOne div:nth-of-type(3) .innerWrapper .text2,
-    #one .wrap .thirdOfOne .thirdOfOne-child1 .innerWrapper .text2{
+    #one .wrap .secondOfOne div:nth-of-type(3) .innerWrapper .text2
+    {
         left: 50%;
         top: 40%;
         transform: translateX(-50%);
+        font-size: 70%;
+    }
+    #one .wrap .thirdOfOne .thirdOfOne-child1 .innerWrapper .text2{
+        left: 50%;
+        top: 60%;
+        transform: translateX(-50%);
+        font-size: 70%;
     }
     #one .wrap .thirdOfOne .thirdOfOne-child2 h2{
         font-size: 2em;

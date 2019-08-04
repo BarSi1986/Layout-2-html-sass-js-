@@ -392,9 +392,9 @@ nav ul li a {
     position: absolute;
     -webkit-transition: .8s;
     transition: .8s;
-    top: 50%;
-    right: 50%;
-    width: 100%;
+    top: 75%;
+    right: 25%;
+    width: 70%;
   }
   #one .wrap .firstOfOne .firstOfOne-child2:hover > .background {
     right: 0;
@@ -478,9 +478,9 @@ nav ul li a {
     position: absolute;
     -webkit-transition: .8s;
     transition: .8s;
-    top: 50%;
-    right: 50%;
-    width: 100%;
+    top: 75%;
+    right: 25%;
+    width: 70%;
   }
   #one .wrap .secondOfOne div:nth-of-type(1):hover > .background {
     right: 0;
@@ -559,9 +559,9 @@ nav ul li a {
     position: absolute;
     -webkit-transition: .8s;
     transition: .8s;
-    top: 50%;
-    right: 50%;
-    width: 100%;
+    top: 75%;
+    right: 25%;
+    width: 70%;
   }
   #one .wrap .secondOfOne div:nth-of-type(2):hover > .background {
     right: 0;
@@ -639,9 +639,9 @@ nav ul li a {
     position: absolute;
     -webkit-transition: .8s;
     transition: .8s;
-    top: 50%;
-    right: 50%;
-    width: 100%;
+    top: 75%;
+    right: 25%;
+    width: 70%;
   }
   #one .wrap .secondOfOne div:nth-of-type(3):hover > .background {
     right: 0;
@@ -723,9 +723,9 @@ nav ul li a {
     position: absolute;
     -webkit-transition: .8s;
     transition: .8s;
-    top: 50%;
-    right: 50%;
-    width: 100%;
+    top: 75%;
+    right: 25%;
+    width: 70%;
   }
   #one .wrap .thirdOfOne .thirdOfOne-child1:hover > .background {
     right: 0;
@@ -1530,12 +1530,19 @@ nav ul li a {
   #one .wrap .secondOfOne div:nth-of-type(1) .innerWrapper .text2,
   #one .wrap .firstOfOne .firstOfOne-child2 .innerWrapper .text2,
   #one .wrap .secondOfOne div:nth-of-type(2) .innerWrapper .text2,
-  #one .wrap .secondOfOne div:nth-of-type(3) .innerWrapper .text2,
-  #one .wrap .thirdOfOne .thirdOfOne-child1 .innerWrapper .text2 {
+  #one .wrap .secondOfOne div:nth-of-type(3) .innerWrapper .text2 {
     left: 50%;
     top: 40%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    font-size: 70%;
+  }
+  #one .wrap .thirdOfOne .thirdOfOne-child1 .innerWrapper .text2 {
+    left: 50%;
+    top: 60%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 70%;
   }
   #one .wrap .thirdOfOne .thirdOfOne-child2 h2 {
     font-size: 2em;
