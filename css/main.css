@@ -1,11 +1,11 @@
-@import url("//db.onlinewebfonts.com/c/a746852ffc294d00169321ff93d78641?family=AeonisLTW01-Regular");
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "AeonisLTW01-Regular";
+  font-family: 'Questrial', sans-serif;
   letter-spacing: 3px;
 }
 
