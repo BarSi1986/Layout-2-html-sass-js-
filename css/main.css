@@ -362,7 +362,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/glass-giants-2.jpg");
+    background-image: url("img/glass-giants-2.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 0;
@@ -448,7 +448,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/eiffel-tower.jpg");
+    background-image: url("img/eiffel-tower.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 0;
@@ -529,7 +529,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/future-shapes.jpg");
+    background-image: url("img/future-shapes.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 0;
@@ -609,7 +609,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/minimal.jpg");
+    background-image: url("img/minimal.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 0;
@@ -693,7 +693,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/unreal-shapes.jpg");
+    background-image: url("img/unreal-shapes.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 0;
@@ -1160,7 +1160,7 @@ nav ul li a {
   #readMore .bgImg {
     width: 100%;
     position: absolute;
-    background-image: url("/img/el-cap-mobile.jpg");
+    background-image: url("img/el-cap-mobile.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1267,7 +1267,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/glass-giants-2.jpg");
+    background-image: url("img/glass-giants-2.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 0.4;
@@ -1326,7 +1326,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/eiffel-tower.jpg");
+    background-image: url("img/eiffel-tower.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 1;
@@ -1376,7 +1376,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/future-shapes.jpg");
+    background-image: url("img/future-shapes.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 1;
@@ -1425,7 +1425,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/minimal.jpg");
+    background-image: url("img/minimal.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 1;
@@ -1479,7 +1479,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/img/unreal-shapes.jpg");
+    background-image: url("img/unreal-shapes.jpg");
     background-position: bottom;
     background-size: cover;
     opacity: 1;

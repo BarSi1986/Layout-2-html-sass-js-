@@ -36,7 +36,7 @@
                 flex-basis: 50%;
                 cursor: pointer;
 
-                @include hoverImg($main-dark-color, 0.4, $main-light-color, $main-light-color, -50%, url('/img/glass-giants-2.jpg'));
+                @include hoverImg($main-dark-color, 0.4, $main-light-color, $main-light-color, -50%, url('img/glass-giants-2.jpg'));
             }
         }
     
@@ -49,7 +49,7 @@
                 position: relative;
                 cursor: pointer;
 
-                @include hoverImg($main-grey-color, 1, $main-dark-color, $main-light-color, 0, url('/img/eiffel-tower.jpg'));
+                @include hoverImg($main-grey-color, 1, $main-dark-color, $main-light-color, 0, url('img/eiffel-tower.jpg'));
             }
             div:nth-of-type(2){
                 flex-grow: 2;
@@ -58,7 +58,7 @@
                     flex-basis: 50%;
                     cursor: pointer;
 
-                    @include hoverImg($main-dark-color, 1, $main-light-color, $main-dark-color, -50%, url('/img/future-shapes.jpg'));
+                    @include hoverImg($main-dark-color, 1, $main-light-color, $main-dark-color, -50%, url('img/future-shapes.jpg'));
             }
             div:nth-of-type(3){
                 flex-grow: 1;
@@ -66,7 +66,7 @@
                 position: relative;
                 cursor: pointer;
 
-                @include hoverImg($main-yellow-color, 1, $main-dark-color, $main-dark-color, 0, url('/img/minimal.jpg'));
+                @include hoverImg($main-yellow-color, 1, $main-dark-color, $main-dark-color, 0, url('img/minimal.jpg'));
             }
         }
 
@@ -79,7 +79,7 @@
                 flex-basis: 50%;
                 cursor: pointer;
 
-                @include hoverImg($main-yellow-color, 1, $main-dark-color, $main-light-color, -50%, url('/img/unreal-shapes.jpg'));
+                @include hoverImg($main-yellow-color, 1, $main-dark-color, $main-light-color, -50%, url('img/unreal-shapes.jpg'));
             }
 
             .thirdOfOne-child2{
